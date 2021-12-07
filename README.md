@@ -56,7 +56,7 @@ julia test_syntetic_validation.jl
 
 This will create the folder `test_results` with the training and test loss for every dataset.
 
-
+---
 ### Reproducing results
 
 The datasets analyzed on our paper are under `Data/` and the results under `Results/`. To produce the figures of the paper, the Mathematica code is under the folder `Figures/`.
