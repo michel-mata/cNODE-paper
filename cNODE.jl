@@ -1,12 +1,19 @@
-pkgs_names = [
-    "DelimitedFiles", "CSV", "DataFrames",
-    "StatsBase", "Random", "Statistics", "LinearAlgebra",
-    "DifferentialEquations", "Distances",
-    "Flux", "DiffEqFlux",
-    "MLDataPattern"]
+begin
+    Pkg.add("DiffEqFlux", v"0.7.0")
+    Pkg.add("DifferentialEquations", v"6.9.0")
+    Pkg.add("Distances", v"0.8.2")
+    Pkg.add("Distributions", v"0.19.2")
+    Pkg.add("Flux", v"0.9.0")
+    Pkg.add("MLDataPattern", v"0.5.3")
+    Pkg.add("StatsBase", v"0.33.0")
 
-Pkg.add.(pkgs_names)
+    pkgs_names = [
+        "DelimitedFiles", "Random", "Statistics", "LinearAlgebra",
+        "Distributed", "SharedArrays", "Combinatorics"
+        ]
 
+    Pkg.add.(pkgs_names)
+end
 
 using Distributions: Uniform, Dirichlet
 using DifferentialEquations: Tsit5
