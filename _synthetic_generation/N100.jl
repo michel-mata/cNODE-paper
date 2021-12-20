@@ -72,7 +72,7 @@ begin
     R = [.01,.1,.25]
     C = [0.5,0.75,1]
 
-    parameters = ["Connectivity","Universality","Noise","Rewiring"]#"Strength",
+    parameters = ["Strength","Connectivity","Universality","Noise","Rewiring"]
     println("DONE")
 end
 
