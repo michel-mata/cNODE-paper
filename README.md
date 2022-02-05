@@ -2,6 +2,8 @@
 
 This repository contains the code associated with the paper: "Predicting microbiome compositions from species assemblages through deep learning" (doi: https://doi.org/10.1101/2021.06.17.448886).
 
+**See [this repository](https://github.com/michel-mata/cNODE.jl.git) for a usable updated package.**
+
 ---
 ### Reproducing results
 
